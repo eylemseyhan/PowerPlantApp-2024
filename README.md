@@ -3,11 +3,11 @@
 Power Plant Web App, enerji santrallerini yönetmek ve enerji üretim süreçlerini takip etmek amacıyla geliştirilen bir uygulamadır. Uygulama, farklı santrallerin verimlilik oranlarını, üretim kapasitelerini ve enerji üretim durumlarını anlık olarak izlemenizi sağlar. Ayrıca, yeni santral ekleme, var olan santralleri güncelleme ve santral verilerini detaylı olarak görüntüleme gibi işlemleri kolayca yapmanıza olanak tanır.
 
 ## Kullanılan Teknolojiler
-ASP.NET Core MVC
-Entity Framework Core
-SQL Server
-Bootstrap 5
-JavaScript ve jQuery
+-ASP.NET Core MVC
+-Entity Framework Core
+-SQL Server
+-Bootstrap 5
+-JavaScript ve jQuery
 
 
 ## Özellikler 
