@@ -1,0 +1,32 @@
+﻿@model PowerPlantApp.Models.PowerPlant
+
+@{
+    Layout = "_Layout";
+}
+<div class="col-12 col-md-6 d-flex">
+    
+<div class="container">
+    <h2>Power Plant Ekle</h2>
+    <form asp-action="Add" method="post"> 
+        <div class="form-group">
+            <label asp-for="Name">Ad</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description">Açıklama</label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Type">Tip</label>
+            <input asp-for="Type" class="form-control" />
+            <span asp-validation-for="Type" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Ekle</button>
+    </form>
+</div>
+</div>

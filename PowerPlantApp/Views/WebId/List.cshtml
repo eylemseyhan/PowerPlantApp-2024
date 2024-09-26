@@ -1,0 +1,86 @@
+﻿@using System.Diagnostics
+@model IEnumerable<PowerPlantApp.Models.PowerPlant>
+
+@{
+    Layout = "_Layout";
+}
+<div class="col-12 align-items-center d-flex">
+    <div class="container">
+        <h2>Güç Santralleri</h2>
+        
+        <div class="d-flex">
+            <div class="mb-3 mr-4 form-group d-inline">
+                <a href="@Url.Action("ExportToExcel", "WebId")" class="btn btn-success d-inline w-auto">
+                    <i class="fas fa-file-excel"></i> Excel'e aktar
+                </a>
+            </div>
+
+            <div class="mb-3 ml-4">
+                <form asp-action="ImportFromExcel" method="post" enctype="multipart/form-data" >
+                    <div class="form-group d-inline">
+
+                        <div>
+                            <button type="submit" class="btn btn-primary d-inline w-auto">
+                                <i class="fas fa-upload"></i> Excel'den Aktar
+                            </button>
+                        </div>
+                        
+                        <div>
+                            <input type="file" name="excelFile" class="form-control-file d-inline" required data-browse="Dosya Seç" id="excelFileInput"/>
+                        
+                        </div>
+
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="col-12 d-flex col-md-6">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Açıklama</th>
+            <th>Tip</th>
+            <th>İşlemler</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var plant in Model)
+        {
+        <tr>
+            <td>@plant.Name</td>
+            <td>@plant.Description</td>
+            <td>@plant.Type</td>
+            <td>
+                <div class="btn btn-group float-right">
+                    <a href="@Url.Action("Edit", "WebId", new { id = plant.Id })" class="btn btn-warning">Düzenle</a>
+
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="@("#deleteModal-" + @plant.Id)">
+                        Sil
+                    </button>
+
+                    @Html.Partial("_DeleteModal", plant)
+                </div>
+            </td>
+        </tr>
+        }
+        </tbody>
+    </table>
+</div>
+  
+    
+    
+
+<script>
+    document.getElementById('excelFileInput').addEventListener('change', function () {
+        var fileName = this.files[0] ? this.files[0].name : 'Dosya seçilmedi';
+        document.getElementById('fileLabel').innerText = fileName;
+    });
+</script>

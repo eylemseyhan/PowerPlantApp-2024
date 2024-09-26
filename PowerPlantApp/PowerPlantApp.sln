@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPlantApp", "PowerPlantApp.csproj", "{A1CDDB8F-B84A-4B4E-93FA-3B1E33FFFC1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1CDDB8F-B84A-4B4E-93FA-3B1E33FFFC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CDDB8F-B84A-4B4E-93FA-3B1E33FFFC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CDDB8F-B84A-4B4E-93FA-3B1E33FFFC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CDDB8F-B84A-4B4E-93FA-3B1E33FFFC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

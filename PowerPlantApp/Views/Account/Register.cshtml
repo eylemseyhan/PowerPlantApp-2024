@@ -1,0 +1,30 @@
+﻿@model PowerPlantApp.Models.RegisterViewModel
+
+@{
+    Layout = "~/Views/Shared/_NewLayout.cshtml"; 
+}
+
+<h2>Kayıt Ol</h2>
+
+<form asp-action="Register" method="post">
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password">Şifre</label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ConfirmPassword">Şifreyi Onayla</label>
+        <input asp-for="ConfirmPassword" type="password" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+</form>
+
+<div class="auth-footer" >
+    <a asp-action="Login" class="mt-3" >Zaten bir hesabınız var mı? Giriş yapın</a>
+</div>
