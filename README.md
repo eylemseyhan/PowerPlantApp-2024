@@ -11,10 +11,6 @@ Power Plant Web App, enerji santrallerini yönetmek ve enerji üretim süreçler
 
 
 ## Özellikler 
-Santral Yönetimi: Yeni santral ekleme, santral bilgilerini güncelleme ve silme.
-Toplam Üretim Kapasitesi Takibi: Enerji santrallerinin toplam üretim kapasitesini izleyebilme.
-Aktif Santraller Listesi: Aktif durumda olan santralleri ve durumlarını listeleme.
-Enerji Üretim Durumu: Günlük, haftalık veya aylık enerji üretim raporları ve grafiksel gösterimler.
-Verimlilik Oranları: Santrallerin verimlilik oranlarını hesaplama ve gösterme.
-Bildirim Sistemi: Yaklaşan bakım tarihlerine dair bildirimler.
-Responsive Tasarım: Hem masaüstü hem mobil cihazlarda rahatça kullanılabilecek modern bir arayüz.
+- Santral Yönetimi: Yeni santral ekleme, santral bilgilerini güncelleme ve silme.
+- Identity Kütüphanesi ile Kimlik Doğrulama: Sistemde kullanıcıların kimlik doğrulama işlemleri yapılabilmektedir. Identity kütüphanesi kullanılarak güvenli bir authentication yapısı oluşturulmuş. Bu, yetkisiz erişimleri önlemeye yardımcı olur.
+- Responsive Tasarım: Hem masaüstü hem mobil cihazlarda rahatça kullanılabilecek modern bir arayüz.
