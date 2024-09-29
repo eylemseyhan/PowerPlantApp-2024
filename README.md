@@ -12,5 +12,5 @@ Power Plant Web App, enerji santrallerini yönetmek ve enerji üretim süreçler
 
 ## Özellikler 
 - Santral Yönetimi: Yeni santral ekleme, santral bilgilerini güncelleme ve silme.
-- Identity Kütüphanesi ile Kimlik Doğrulama: Sistemde kullanıcıların kimlik doğrulama işlemleri yapılabilmektedir. Identity kütüphanesi kullanılarak güvenli bir authentication yapısı oluşturulmuş. Bu, yetkisiz erişimleri önlemeye yardımcı olur.
+- Identity Kütüphanesi ile Kimlik Doğrulama: Sistemde kullanıcıların kimlik doğrulama işlemleri yapılabilmektedir. Identity kütüphanesi kullanılarak güvenli bir authentication yapısı oluşturuldu. Bu, yetkisiz erişimleri önlemeye yardımcı olur.
 - Responsive Tasarım: Hem masaüstü hem mobil cihazlarda rahatça kullanılabilecek modern bir arayüz.
